@@ -6,7 +6,7 @@ const TODOS_LS = "toDos";
 let toDos = [];
 
 function saveToDo() {
-    localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
+    localStorage.setItem(TODOS_LS, JSON.stringify(toDos)); // JS값이나 객체를 JSON 문자열로 변경
 }
 
 function writeToDo(text) {
@@ -40,7 +40,7 @@ function submitToDo(event) {
 function loadToDo() {
     const loadedToDos = localStorage.getItem(TODOS_LS);
     if(loadedToDos !== null) {
-        const parsedToDos = JSON.parse(loadedToDos);
+        const parsedToDos = JSON.parse(loadedToDos); // JSON 문자열을 JS값이나 객체로 반환
         parsedToDos.forEach( function(toDo) {
             writeToDo(toDo.text);
         })
