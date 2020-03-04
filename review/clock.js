@@ -4,7 +4,7 @@ const timeTxt = timeContainer.querySelector("h3");
 function time() {
     const clock = new Date();
     const year = clock.getFullYear();
-    const month = clock.getMonth();
+    const month = clock.getMonth() +1;
     const date = clock.getDate();
     const hour = clock.getHours();
     const min = clock.getMinutes();
