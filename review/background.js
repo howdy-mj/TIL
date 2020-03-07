@@ -15,6 +15,5 @@ function changeBG() {
     // console.log(hexColor);
     document.body.style.backgroundColor = hexColor;
     bgHex.innerText = hexColor;
-
 }
 
