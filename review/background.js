@@ -13,6 +13,14 @@ function changeBG() {
         hexColor += hexValue[random];
     }
     // console.log(hexColor);
+
+    if (hexColor === "#000000") {
+        for(var i = 0; i < 6; i++) {
+            const random = Math.floor(Math.random() * hexValue.length);
+            hexColor += hexValue[random];
+        }
+    }
+
     document.body.style.backgroundColor = hexColor;
     bgHex.innerText = hexColor;
 }

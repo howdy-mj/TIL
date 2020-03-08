@@ -9,3 +9,26 @@
 .showing {
     display: block;
 }
+
+body {
+    text-align: center;
+}
+
+.bgcolorHex {
+    font-size: 12px;
+}
+
+.article {
+    margin: 50px 50px;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.bgcolor {
+    text-align: right;
+}
+
+.weather {
+    font-size: 13px;
+}

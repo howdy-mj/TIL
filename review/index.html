@@ -6,27 +6,30 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        
         <div class="bgcolor">
             <button class="bgBtn">Background</button>
+            <p class="bgcolorHex"></p>
         </div>
-        <p class="bgcolorHex"></p>
+        
+        <div class="article">
+            <div class="time">
+                <h3>0000/00/00 00:00:00</h3>
+            </div>
 
-        <div class="time">
-            <h3>0000/00/00 00:00:00</h3>
+            <span class="weather"></span>
+
+            <form class="hello form">
+                <input type="text" placeholder="What's your name?">
+            </form>
+            <h1 class="helloName hellotxt"></h1>
+
+            <h4>- To Do List</h4>
+            <form class="todoForm">
+                <input type="text" placeholder="What I have to do is...">
+            </form>
+            <ul class="todoList"></ul>
         </div>
-
-        <span class="weather"></span>
-
-        <form class="hello form">
-            <input type="text" placeholder="What's your name?">
-        </form>
-        <h2 class="helloName hellotxt"></h2>
-
-        <h4>- To Do List</h4>
-        <form class="todoForm">
-            <input type="text" placeholder="What I have to do is...">
-        </form>
-        <ul class="todoList"></ul>
 
         <script src="clock.js"></script>
         <script src="greeting.js"></script>
