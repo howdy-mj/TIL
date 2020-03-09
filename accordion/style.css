@@ -1,0 +1,54 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.all {
+    margin: 50px auto;
+    font-weight: 500;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section {
+    background: #002851;
+    color: white;
+    border: 0;
+    padding: 20px;
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button.section:hover {
+    background: #001428;
+}
+
+div .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    width: 65%;
+    margin: 0 auto;
+    transition: max-height .2s ease-out;
+}
+
+div .content p {
+    text-align: left;
+}
