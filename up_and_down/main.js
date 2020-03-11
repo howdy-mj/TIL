@@ -10,6 +10,8 @@ function randomNum() {
 }
 randomNum();
 
+var incorrect = 0;
+
 gameForm.addEventListener("submit", function(e) {
     e.preventDefault();
     
@@ -21,16 +23,31 @@ gameForm.addEventListener("submit", function(e) {
 
         randomNum();
     } else {
-        if (computerNum < Number(gameInput.value)) {
-            // console.log("컴퓨터보다 높음");
-            gameResult.textContent = `UP! 더 낮은 숫자를 입력하세요.`;
+        if ( incorrect > 3) {
+            gameResult.textContent = `맞추기 실패ㅠㅠ.. 정답은 ${computerNum}였습니다. 다음 문제로 넘어갑니다!`;
+            incorrect = 0;
+
             gameInput.value = "";
             gameInput.focus();
-        } else if (computerNum > Number(gameInput.value)) {
-            // console.log("컴퓨터보다 낮음");
-            gameResult.textContent = `DOWN! 더 높은 숫자를 입력하세요.`;
-            gameInput.value = "";
-            gameInput.focus();
+            randomNum();
+        } else {
+            if (computerNum < Number(gameInput.value)) {
+                // console.log("컴퓨터보다 높음");
+                incorrect += 1;
+                console.log(incorrect);
+
+                gameResult.textContent = `UP! 더 낮은 숫자를 입력하세요. (남은 횟수: ${5-incorrect}번)`;
+                gameInput.value = "";
+                gameInput.focus();
+            } else if (computerNum > Number(gameInput.value)) {
+                // console.log("컴퓨터보다 낮음");
+                incorrect += 1;
+                console.log(incorrect);
+
+                gameResult.textContent = `DOWN! 더 높은 숫자를 입력하세요. (남은 횟수: ${5-incorrect}번)`;
+                gameInput.value = "";
+                gameInput.focus();
+            }
         }
     }
 });
