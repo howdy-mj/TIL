@@ -12,9 +12,11 @@ Review what I learned
 > ###### 배경색 버튼으로 변경하기   
 > ###### 날씨 API를 활용해 온도, 위치 불러오기   
 
-
 #### 02. [scroll_indicator](https://github.com/howdy-mj/TIL/tree/master/scroll_indicator), 2020.03.08
 > ###### 스크롤 위치 표시하기
 
 #### 03. [accordion](https://github.com/howdy-mj/TIL/tree/master/accordion), 2020.03.10
 > ###### 문단 접기-펼치기 기능 구현하기
+
+#### 04. [up_and_down](https://github.com/howdy-mj/TIL/tree/master/up_and_down), 2020.03.10
+> ###### 숫자 맞추기 게임
