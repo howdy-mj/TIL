@@ -18,5 +18,5 @@ Review what I learned
 #### 03. [accordion](https://github.com/howdy-mj/TIL/tree/master/accordion), 2020.03.10
 > ###### 문단 접기-펼치기 기능 구현하기
 
-#### 04. [up_and_down](https://github.com/howdy-mj/TIL/tree/master/up_and_down), 2020.03.10
+#### 04. [up_and_down](https://github.com/howdy-mj/TIL/tree/master/up_and_down), 2020.03.11
 > ###### 숫자 맞추기 게임
